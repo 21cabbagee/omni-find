@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import SemanticSearchDeck from './components/SemanticSearchDeck';
 import BatchParserDropzone from './components/BatchParserDropzone';
+import OutcomeChart from './components/OutcomeChart';
 import CabModal from './components/CabModal';
 import Footer from './components/Footer';
 import { MOCK_DOCUMENTS } from './data/mockDocuments';
@@ -33,6 +34,9 @@ export default function App() {
       <main className="flex-1">
         {/* High-Converting SEO Hero */}
         <Hero onSelectPreset={handleSelectPreset} />
+
+        {/* Julien Bek $1:$6 Economic Engine / Larry Ellison SLA Proof */}
+        <OutcomeChart onCtaClick={() => setIsCabOpen(true)} />
 
         {/* Semantic Query Deck & Highlighted Citations */}
         <SemanticSearchDeck

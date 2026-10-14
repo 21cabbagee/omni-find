@@ -1,10 +1,14 @@
 import React from 'react';
 import { Search, Sparkles, Shield, Zap, FileText, ArrowRight, FolderSearch } from 'lucide-react';
 import { PRESET_OMNI_QUERIES } from '../data/mockDocuments';
+import ParticlesCanvas from './ParticlesCanvas';
 
 export default function Hero({ onSelectPreset }) {
   return (
     <section className="relative pt-12 pb-8 overflow-hidden">
+      {/* Casberry-inspired Particles WebGL Canvas */}
+      <ParticlesCanvas particleColor="6, 182, 212" particleCount={50} />
+
       {/* Background radial glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-omni-600/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-teal-500/10 rounded-full blur-2xl pointer-events-none" />
